@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sen's Project</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  /* Menu Code css starts*/
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* menu code css ends*/ 
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+ padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body bgcolor="#D3D3D3">
+<!--  menu code HTML starts  -->
+ 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://aboutyogastudios.senmuthiya.repl.co/">Home</a>
+  <a href="https://aboutyogastudios.senmuthiya.repl.co/yogaLineage.html">Images</a>
+  <a href="https://aboutyogastudios.senmuthiya.repl.co/studiosCount.html">Studios</a>
+  <a href="haiku.html">Haiku</a>
+  <a href="poetry.html">Poetry</a>
+  <a href="folktale.html">Folk Tale</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="https://rockpaperscissorssenv10.senmuthiya.repl.co/">Project JS</a>
+  <a href="https://aboutyogastudios--senmuthiya.repl.co/studiosRI.html">Data Analysis</a>
+  <a href="https://aboutyogastudios--senmuthiya.repl.co/credit.html">Credits</a>
+</div>
+<!-- <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+ <!--  menu code HTML ends  -->
+
+ <div style="max-width:750px;min-width:250px;position:relative;margin:auto;">
+
+
+<h2>Folk Tale</h2>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<br /></div>
+<div style="text-align: center;">
+<iframe allowfullscreen="" frameborder="0" height="325" src="https://spark.adobe.com/video/zOkh9u2uFW3gy/embed" width="575"></iframe>
+</div>
+</div>
+
+ </div>
+
+
+
+</body>
+</html>

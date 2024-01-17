@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<title>Sen's Project</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+/* Menu Code css starts*/
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* menu code css ends*/ 
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.text {
+  /* color: #f2f2f2; */
+  /* color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* color: #f2f2f2; */
+  color: white;
+  font-size: 19px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 1px 7px;
+  color: white;
+  height: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body bgcolor="#D3D3D3">
+
+  <!--  menu code HTML starts  -->
+ 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://aboutyogastudios.senmuthiya.repl.co/">Home</a>
+  <a href="https://aboutyogastudios.senmuthiya.repl.co/yogaLineage.html">Images</a>
+  <a href="https://aboutyogastudios.senmuthiya.repl.co/studiosCount.html">Studios</a>
+  <a href="haiku.html">Haiku</a>
+  <a href="poetry.html">Poetry</a>
+  <a href="folktale.html">Folk Tale</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="https://rockpaperscissorssenv10.senmuthiya.repl.co/">Project JS</a>
+  <a href="https://aboutyogastudios--senmuthiya.repl.co/studiosRI.html">Data Analysis</a>
+  <a href="https://aboutyogastudios--senmuthiya.repl.co/credit.html">Credits</a>
+</div>
+<!-- <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+ <!--  menu code HTML ends  -->
+
+<!-- <h2 style="text-align:center">Slideshow Gallery</h2> -->
+
+<div style="max-width:750px;min-width:250px;position:relative;margin:auto;">
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/nature1.jpg" style="width:100%">
+    <div class="text">Intelligence is the ability to adapt to change.</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/nature1.jpg" style="width:100%">
+    <div class="text">Imagination is more important than knowledge.</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/nature1.jpg" style="width:100%">
+    <div class="text">Innovation distinguishes between a leader and a follower.</div>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/nature1.jpg" style="width:100%">
+    <div class="text">It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you'll do things differently.</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/nature1.jpg" style="width:100%">
+    <div class="text">Your most unhappy customers are your greatest source of learning.</div>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/nature1.jpg" style="width:100%">
+    <div class="text">Genius is one percent inspiration and ninety-nine percent perspiration.</div>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/nature1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Stephen Hawking">
+      <div class="numbertext">1</div>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Albert Einstein">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Steve Jobs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Warren Buffett">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bill Gates">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/nature1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Thomas Edison">
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
